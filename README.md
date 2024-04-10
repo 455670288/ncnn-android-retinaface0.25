@@ -1,6 +1,6 @@
-# ncnn-android-scrfd
+# ncnn-android-retinaface_0.25
 
-The SCRFD face detection
+The retinaface_0.25 face detection
 
 This is a sample ncnn android project, it depends on ncnn library and opencv
 
@@ -34,6 +34,6 @@ https://github.com/nihui/opencv-mobile
 * Most small models run slower on GPU than on CPU, this is common
 * FPS may be lower in dark environment because of longer camera exposure time
 
-## screenshot
-![](screenshot.jpg)
+## reference
+https://github.com/nihui/ncnn-android-scrfd
 
