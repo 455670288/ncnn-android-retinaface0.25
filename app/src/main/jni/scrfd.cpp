@@ -272,7 +272,8 @@ int SCRFD::load(AAssetManager* mgr, const char* modeltype, bool use_gpu)
 #if NCNN_VULKAN
     scrfd.opt.use_vulkan_compute = use_gpu;
 #endif
-
+    scrfd.opt.blob_allocator = &blob_pool_allocator;
+    scrfd.opt.workspace_allocator = &workspace_pool_allocator;
     scrfd.opt.num_threads = ncnn::get_big_cpu_count();
 
     char parampath[256];
